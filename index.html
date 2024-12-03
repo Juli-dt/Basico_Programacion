@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Ropa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f1f1f1;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 15px;
+        }
+
+        .sidebar-section h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .sidebar-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar-section ul li {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar-section ul li:hover {
+            background-color: #ddd;
+        }
+
+        .topbar-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .topbar-nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cart-icon {
+            cursor: pointer;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <h3>Categorías</h3>
+            <ul>
+                <li>Deportiva</li>
+                <li>Casual</li>
+                <li>Elegante</li>
+                <li>Lencería</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="topbar-nav">
+                <a href="#">Home</a>
+                <a href="#">Contáctenos</a>
+            </div>
+            <div class="cart-icon">🛒 Carrito</div>
+        </div>
+
+        <div class="main-content">
+            <h1>Productos Destacados</h1>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="/api/placeholder/250/250" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>$49.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="/api/placeholder/250/250" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>$59.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="/api/placeholder/250/250" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p>$39.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+                <div class="product-card">
+                    <img src="/api/placeholder/250/250" alt="Producto 4">
+                    <h3>Producto 4</h3>
+                    <p>$69.99</p>
+                    <button>Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

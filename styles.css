@@ -61,7 +61,7 @@ body {
 .topbar-nav {
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .topbar-nav a {

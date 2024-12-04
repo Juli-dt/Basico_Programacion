@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let totalPrice = 0;
 
     addToCartButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const productName = this.getAttribute('data-name');
             const productPrice = parseFloat(this.getAttribute('data-price'));
             const productImage = this.closest('.product').querySelector('.product__image').src;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="cart__item-price">$${productPrice.toFixed(2)}</p>
                 </div>
                 <div class="cart__item-delete">
-                    <img src="./img/close.png" alt="Eliminar" class="cart__item-delete-icon">
+                    <img src="./assets/img/close.png" alt="eliminar" width="20px" class="cart__item-delete-icon">
                 </div>
             `;
 

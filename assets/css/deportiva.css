@@ -152,11 +152,7 @@ body {
 .sidebar-section ul li:hover {
     background-color: #ddd;
 }
-.marcas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 footer {
     background-color: #305754;
     height: 100px;

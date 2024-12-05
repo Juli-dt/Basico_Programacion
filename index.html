@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+            <h3>Categorías</h3>
+            <ul>
+                <a href="pages/deportiva.html"></a><li>Deportiva</li></a>
+                <li>Casual</li>
+                <li>Elegante</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="topbar-nav">
+                <div class="toggle-sidebar" id="toggleSidebar">☰ Productos</div>
+                <a href="#">Home</a>
+                <a href="#">Contáctenos</a>
+                <a href="#">A cerca de</a>
+                <a href="#">Compras</a>
+            </div>
+            <div class="header__icon" id="cart-icon">
+                <span id="cart-count" class="cart-count">0</span>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="overlay-cart" class="overlay-cart"></div>
+
+            <h1>Productos Destacados</h1>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="./assets/img/Casual/basica blanca.jpg" alt="Producto 1" class="product__image">
+                    <h3 class="product__title">Producto 1</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 1" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/Deportiva/camuflado gris.jpg" alt="Producto 2" class="product__image">
+                    <h3 class="product__title">Producto 2</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 2" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="./assets/img/Elegante/gray.jpg" alt="Producto 3" class="product__image">
+                    <h3 class="product__title">Producto 3</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 3" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="/assets/img/Casual/cargo beige.jpg" alt="Producto 4" class="product__image">
+                    <h3 class="product__title">Producto 4</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 4" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+            </div>
+        </div>
+        <section class="cart" id="cart">
+            <h2 class="cart__title">CARRITO</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total-price">0</span></p>
+                <button> Comprar </button>
+            </div>
+        </section>
+        <h1> Marcas </h1>
+        <div class="marcas">
+
+            <div class="marca"><img src="" alt="marca"></div>
+            <div class="marca"><img src="" alt="marca"></div>
+            <div class="marca"><img src="" alt="marca"></div>
+            <div class="marca"><img src="" alt="marca"></div>
+        </div>
+    </div>
+    <footer>
+        Creado por: Angélica Rivera, Lucas Muñoz y Julián Tejada
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

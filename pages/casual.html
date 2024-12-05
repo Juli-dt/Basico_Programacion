@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="../assets/css/casual.css">
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+            <h3>Categorías</h3>
+            <ul>
+                <li>Deportiva</li>
+                <li>Casual</li>
+                <li>Elegante</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="topbar-nav">
+                <div class="toggle-sidebar" id="toggleSidebar">☰ Productos</div>
+                <a href="#">Home</a>
+                <a href="#">Contáctenos</a>
+                <a href="#">A cerca de</a>
+                <a href="#">Compras</a>
+            </div>
+            <div class="header__icon" id="cart-icon">
+                <span id="cart-count" class="cart-count">0</span>
+                <div class="cart-icon">🛒</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div id="overlay-cart" class="overlay-cart"></div>
+
+            <h1>Ropa Casual</h1>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="../assets/img/Casual/basica blanca.jpg" alt="Producto 1" class="product__image">
+                    <h3 class="product__title">Camiseta Básica Blanca</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 1" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/img/Casual/buso gris.jpg" alt="Producto 2" class="product__image">
+                    <h3 class="product__title">Buso Gris</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 2" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/img/Casual/buso terracota.jpg" alt="Producto 3" class="product__image">
+                    <h3 class="product__title">Buso Terracota</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 3" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/img/Casual/camibuso salmon.jpg" alt="Producto 4" class="product__image">
+                    <h3 class="product__title">Camibuso Salmon</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 4" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/img/Casual/cargo beige.jpg" alt="Producto 4" class="product__image">
+                    <h3 class="product__title">Cargo Beige</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 4" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/img/Casual/flexible gray.jpg" alt="Producto 4" class="product__image">
+                    <h3 class="product__title">Flexible Gray</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 4" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/img/Casual/jean claro.jpg" alt="Producto 4" class="product__image">
+                    <h3 class="product__title">Jean Claro</h3>
+                    <p class="product__price">$2,300.00</p>
+                    <button class="product__add-to-cart" data-name="Producto 4" data-price="2300">Agregar al
+                        Carrito</button>
+                </div>
+            </div>
+        </div>
+        <section class="cart" id="cart">
+            <h2 class="cart__title">CARRITO</h2>
+            <div id="cart-items" class="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total-price">0</span></p>
+                <button> Comprar </button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        Creado por: Angélica Rivera, Lucas Muñoz y Julián Tejada
+    </footer>
+    <script src="../assets/js/index.js"></script>
+</body>
+
+</html>

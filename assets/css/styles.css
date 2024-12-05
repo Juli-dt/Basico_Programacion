@@ -52,7 +52,7 @@ body {
 .topbar {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #383838;
     color: white;
     padding: 15px;
     align-items: center;
@@ -151,4 +151,16 @@ body {
 
 .sidebar-section ul li:hover {
     background-color: #ddd;
+}
+.marcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer {
+    background-color: #305754;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
 }

@@ -92,7 +92,33 @@ body {
 .main-content {
     padding: 20px;
 }
-
+.product__add-to-cart,
+.comprar {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.product__add-to-cart:hover,
+.comprar :hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.product__add-to-cart:active, 
+.comprar :active{
+	position:relative;
+	top:1px;
+}
 .products-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -154,9 +180,16 @@ body {
 }
 .marcas {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-}
+    align-items: center;
+    gap: 10px; /* Separación entre imágenes */
+  }
+  
+  .marca img {
+    width: 100px; /* Ajusta el tamaño que desees */
+    height: 100px; /* Ajusta el tamaño que desees */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+  }
 footer {
     background-color: #305754;
     height: 100px;

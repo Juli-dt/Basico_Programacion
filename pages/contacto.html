@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/contacto.css">
+    <title>Página de Contacto</title>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-section">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="deportiva.html">Deportiva</a></li>
+                <li>Casual</li>
+                <li>Elegante</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div class="main-container">
+        <div class="topbar">
+            <div class="topbar-nav">
+                <div class="toggle-sidebar" id="toggleSidebar">☰ Productos</div>
+                <a href="../index.html">Home</a>
+                <a href="#">Contáctenos</a>
+                <a href="#">A cerca de</a>
+                <a href="#">Compras</a>
+            </div>
+            
+        </div>
+
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="name">Número de Celular::</label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Comentarios:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="map-container">
+            <h2>Ubicación</h2>
+            <p>Dirección: Cali, Valle del Cauca, Cra 41B #39-11</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.7351389226983!2d-76.51243752603743!3d3.414597551465665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a6da73435291%3A0x955ae8675dc5adf7!2sCra.%2041b%20%2339-11%2C%20Union%20de%20Vivienda%20Popular%2C%20Cali%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1733403906520!5m2!1ses!2sco"
+                width="60px" height="10%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <footer>
+        Creado por: Angélica Rivera, Lucas Muñoz y Julián Tejada
+    </footer>
+    <script src="../assets/js/index.js"></script>
+</body>
+
+</html>

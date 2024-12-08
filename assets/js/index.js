@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleSidebarButton = document.getElementById('toggleSidebar');
-    const sidebar = document.getElementById('sidebar');
-    const sidebarOverlay = document.getElementById('overlay');
+    // const toggleSidebarButton = document.getElementById('toggleSidebar');
+    // const sidebar = document.getElementById('sidebar');
+    // const sidebarOverlay = document.getElementById('overlay');
 
-    toggleSidebarButton.addEventListener('click', () => {
-        sidebar.classList.toggle('open');
-        sidebarOverlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
-    });
+    // toggleSidebarButton.addEventListener('click', () => {
+    //     sidebar.classList.toggle('open');
+    //     sidebarOverlay.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
+    // });
 
-    sidebarOverlay.addEventListener('click', () => {
-        sidebar.classList.remove('open');
-        sidebarOverlay.style.display = 'none';
-    });
+    // sidebarOverlay.addEventListener('click', () => {
+    //     sidebar.classList.remove('open');
+    //     sidebarOverlay.style.display = 'none';
+    // });
 
     const cartIcon = document.getElementById('cart-icon');
     const cart = document.getElementById('cart');
@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
         deleteButton.addEventListener('click', () => {
             const itemName = cartItem.getAttribute('data-name');
             
-            // Reducir cantidad o eliminar completamente
             if (cart_items[itemName].quantity > 1) {
                 cart_items[itemName].quantity--;
                 totalPrice -= cart_items[itemName].price;
@@ -93,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 delete cart_items[itemName];
             }
 
-            // Actualizar contador y total
             cartCount.textContent = Object.values(cart_items).reduce((total, item) => total + item.quantity, 0);
             cartTotalPrice.textContent = totalPrice.toFixed(2);
         });
@@ -113,4 +111,179 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-});
+
+
+const database = [
+    {
+        id: 1,
+        name: 'Básica blanca',
+        price: 50.000,
+        image: "../assets/img/Casual/basica blanca.jpg",
+        category: 'Casual',
+        destacado: true
+    },
+    {
+        id: 2,
+        name: 'Buso Gris',
+        price: 55.000,
+        image: "../assets/img/Casual/buso gris.jpg",
+        category: 'Casual',
+        destacado: false
+    },
+    {
+        id: 3,
+        name: 'Buso Terracota',
+        price: 55.000,
+        image: "../assets/img/Casual/buso terracota.jpg",
+        category: 'Casual',
+        destacado: false
+    },
+    {
+        id: 4,
+        name: 'Camibuso Salmón',
+        price: 60.000,
+        image: "../assets/img/Casual/camibuso salmon.jpg",
+        category: 'Casual',
+        destacado: false
+    },
+    {
+        id: 5,
+        name: 'Cargo Beige',
+        price: 120.000,
+        image: "../assets/img/Casual/cargo beige.jpg",
+        category: 'Casual',
+        destacado: false
+    },
+    {
+        id: 6,
+        name: 'Flexible Gray',
+        price: 100.000,
+        image: "../assets/img/Casual/flexible gray.jpg",
+        category: 'Casual',
+        destacado: true
+    },
+    {
+        id: 7,
+        name: 'Jean Claro',
+        price: 100.000,
+        image: "../assets/img/Casual/jean claro.jpg",
+        category: 'Casual',
+        destacado: false
+    },
+    {
+        id: 8,
+        name: 'Camiseta Azul',
+        price: 60.000,
+        image: "../assets/img/Deportiva/azul.jpg",
+        category: 'Deportivo',
+        destacado: false
+    },
+    {
+        id: 9,
+        name: 'Camiseta Negra',
+        price: 60.00,
+        image: "../assets/img/Deportiva/black.jpg",
+        category: 'Deportivo',
+        destacado: true
+    },
+    {
+        id: 10,
+        name: 'Camuflado Gris',
+        price: 110.000,
+        image: "../assets/img/Deportiva/camuflado gris.jpg",
+        category: 'Deportivo',
+        destacado: false
+    },
+    {
+        id: 11,
+        name: 'Conjunto b-b',
+        price: 180.000,
+        image: "../assets/img/Deportiva/conjunto b-b.jpg",
+        category: 'Deportivo',
+        destacado: false
+    },
+    {
+        id: 12,
+        name: 'Conjunto Olivo',
+        price: 190.000,
+        image: "../assets/img/Deportiva/conjunto olivo.jpg",
+        category: 'Deportivo',
+        destacado: false
+    },
+    {
+        id: 13,
+        name: 'Trusa Negra',
+        price: 100.000,
+        image: "../assets/img/Deportiva/trusa negra deportiva.jpg",
+        category: 'Deportivo',
+        destacado: false
+    },
+    {
+        id: 14,
+        name: 'Camisa a cuadros azul',
+        price: 70.000,
+        image: "../assets/img/Elegante/camisa a cuadros azul.jpg",
+        category: 'Elegante',
+        destacado: false
+    },
+    {
+        id: 15,
+        name: 'Camisa Gris',
+        price: 70.000,
+        image: "../assets/img/Elegante/gray.jpg",
+        category: 'Elegante',
+        destacado: true
+    },
+    {
+        id: 16,
+        name: 'Camisa Manga Corta',
+        price: 65.000,
+        image: "../assets/img/Elegante/gris manga corta.jpg",
+        category: 'Elegante',
+        destacado: false
+    },
+    {
+        id: 17,
+        name: 'Camisa Rosada',
+        price: 70.000,
+        image: "../assets/img/Elegante/lila.jpg",
+        category: 'Elegante',
+        destacado: false
+    },
+    {
+        id: 18,
+        name: 'Pantalón Café',
+        price: 125.000,
+        image: "../assets/img/Elegante/pantalon brown.jpg",
+        category: 'Elegante',
+        destacado: false
+    },
+    {
+        id: 19,
+        name: 'Pantalón Azul Oscuro',
+        price: 125.000,
+        image: "../assets/img/Elegante/pantalon dark blue.jpg",
+        category: 'Elegante',
+        destacado: false
+    },
+    {
+        id: 20,
+        name: 'Pantalón Negro',
+        price: 125.000,
+        image: "../assets/img/Elegante/pantalon negro.jpg",
+        category: 'Elegante',
+        destacado: false
+    },
+    {
+        id: 21,
+        name: 'Pantalón Azul',
+        price: 125.000,
+        image: "../assets/img/Elegante/pantalon sky blue.jpg",
+        category: 'Elegante',
+        destacado: false
+    }
+];
+window.onload = function () {
+    localStorage.setItem('database', JSON.stringify(database));
+    localStorage.setItem('cart', JSON.stringify(cart))
+}});

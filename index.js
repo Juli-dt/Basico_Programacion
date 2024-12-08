@@ -118,7 +118,7 @@ const database = [
         id: 1,
         name: 'Básica blanca',
         price: 50.000,
-        image: "img/Casual/basica blanca.jpg",
+        image: "./basica blanca.jpg",
         category: 'Casual',
         destacado: true
     },

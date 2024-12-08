@@ -1,11 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.sidebar, .cart {
+.toggle-sidebar {
+    display: none;
+}
+.sidebar,
+.cart {
     position: fixed;
     height: 100%;
     top: 0;
@@ -25,27 +31,30 @@ body {
     background-color: #fff;
     right: -390px;
     padding: 20px;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar.open {
     left: 0;
 }
+
 .toggle-sidebar {
     cursor: pointer;
 }
+
 .cart.open {
     right: 0;
 }
 
-.overlay, .overlay-cart {
+.overlay,
+.overlay-cart {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
@@ -67,48 +76,6 @@ body {
 .topbar-nav a {
     color: white;
     text-decoration: none;
-}
-
-.header__icon {
-    position: relative;
-    cursor: pointer;
-}
-
-.cart-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-}
-
-.product__image {
-    max-width: 100%;
-    height: 250px;
-    object-fit: cover;
 }
 
 .cart__item {
@@ -160,30 +127,10 @@ footer {
     align-items: center;
     padding: 12px;
 }
-.product__add-to-cart,
-.comprar {
-	box-shadow: 0px 1px 0px 0px #1c1b18;
-	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
-	background-color:#eae0c2;
-	border-radius:15px;
-	border:2px solid #333029;
-	display:inline-block;
-	cursor:pointer;
-	color:#505739;
-	font-family:Arial;
-	font-size:14px;
-	font-weight:bold;
-	padding:12px 16px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
-.product__add-to-cart:hover,
-.comprar :hover {
-	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
-	background-color:#ccc2a6;
-}
-.product__add-to-cart:active, 
-.comprar :active{
-	position:relative;
-	top:1px;
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: beige;
 }

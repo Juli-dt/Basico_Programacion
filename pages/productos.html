@@ -4,27 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Tienda de Ropa</title>
-    <link rel="stylesheet" href="../assets/css/compras.css">
+    <link rel="stylesheet" href="../assets/css/productos.css">
 </head>
 
-<body>
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-section">
-            <h3>Categorías</h3>
-            <ul>
-                <a href="pages/deportiva.html">
-                    <li>Deportiva</li>
-                </a>
-                <li><a href="pages/casual.html">Casual</a></li>
-                <li>Elegante</li>
-            </ul>
-        </div>
-    </div>
-
+<body class="hide-add-to-cart-button">
     <div id="overlay" class="overlay"></div>
 
     <div class="main-container">
-        <div class="topbar">
+        <header class="topbar">
             <div class="topbar-nav">
                 <div class="toggle-sidebar" id="toggleSidebar">☰ Productos</div>
                 <a href="../index.html">Home</a>
@@ -34,12 +21,11 @@
                 <a href="./productos.html">Productos</a>
             </div>
             <h1>CLOTHES</h1>
-
             <div class="header__icon" id="cart-icon">
                 <span id="cart-count" class="cart-count">0</span>
                 <div class="cart-icon">🛒</div>
             </div>
-        </div>
+        </header>
         <div class="main-content">
 
             <div id="overlay-cart" class="overlay-cart"></div>

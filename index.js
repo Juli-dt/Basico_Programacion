@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="cart__item-quantity">Cantidad: <span>${item.quantity}</span></p>
             </div>
             <div class="cart__item-delete">
-                <img src="../assets/img/close.png" alt="eliminar" width="20px" class="cart__item-delete-icon">
+                <img src="img/close.png" alt="eliminar" width="20px" class="cart__item-delete-icon">
             </div>
         `;
 
@@ -118,7 +118,7 @@ const database = [
         id: 1,
         name: 'Básica blanca',
         price: 50.000,
-        image: "assets/img/Casual//basica blanca.jpg",
+        image: "img/Casual/basica blanca.jpg",
         category: 'Casual',
         destacado: true
     },
@@ -126,7 +126,7 @@ const database = [
         id: 2,
         name: 'Buso Gris',
         price: 55.000,
-        image: "assets/img/Casual/buso gris.jpg",
+        image: "img/Casual/buso gris.jpg",
         category: 'Casual',
         destacado: false
     },
@@ -134,7 +134,7 @@ const database = [
         id: 3,
         name: 'Buso Terracota',
         price: 55.000,
-        image: "assets/img/Casual/buso terracota.jpg",
+        image: "img/Casual/buso terracota.jpg",
         category: 'Casual',
         destacado: false
     },
@@ -142,7 +142,7 @@ const database = [
         id: 4,
         name: 'Camibuso Salmón',
         price: 60.000,
-        image: "assets/img/Casual/camibuso salmon.jpg",
+        image: "img/Casual/camibuso salmon.jpg",
         category: 'Casual',
         destacado: false
     },
@@ -150,7 +150,7 @@ const database = [
         id: 5,
         name: 'Cargo Beige',
         price: 120.000,
-        image: "assets/img/Casual/cargo beige.jpg",
+        image: "img/Casual/cargo beige.jpg",
         category: 'Casual',
         destacado: false
     },
@@ -158,7 +158,7 @@ const database = [
         id: 6,
         name: 'Flexible Gray',
         price: 100.000,
-        image: "assets/img/Casual/flexible gray.jpg",
+        image: "img/Casual/flexible gray.jpg",
         category: 'Casual',
         destacado: true
     },
@@ -166,7 +166,7 @@ const database = [
         id: 7,
         name: 'Jean Claro',
         price: 100.000,
-        image: "assets/img/Casual/jean claro.jpg",
+        image: "img/Casual/jean claro.jpg",
         category: 'Casual',
         destacado: false
     },
@@ -174,7 +174,7 @@ const database = [
         id: 8,
         name: 'Camiseta Azul',
         price: 60.000,
-        image: "assets/img/Deportiva/azul.jpg",
+        image: "img/Deportiva/azul.jpg",
         category: 'Deportivo',
         destacado: false
     },
@@ -182,7 +182,7 @@ const database = [
         id: 9,
         name: 'Camiseta Negra',
         price: 60.00,
-        image: "assets/img/Deportiva/black.jpg",
+        image: "img/Deportiva/black.jpg",
         category: 'Deportivo',
         destacado: true
     },
@@ -190,7 +190,7 @@ const database = [
         id: 10,
         name: 'Camuflado Gris',
         price: 110.000,
-        image: "assets/img/Deportiva/camuflado gris.jpg",
+        image: "img/Deportiva/camuflado gris.jpg",
         category: 'Deportivo',
         destacado: false
     },
@@ -198,7 +198,7 @@ const database = [
         id: 11,
         name: 'Conjunto b-b',
         price: 180.000,
-        image: "assets/img/Deportiva/conjunto b-b.jpg",
+        image: "img/Deportiva/conjunto b-b.jpg",
         category: 'Deportivo',
         destacado: false
     },
@@ -206,7 +206,7 @@ const database = [
         id: 12,
         name: 'Conjunto Olivo',
         price: 190.000,
-        image: "assets/img/Deportiva/conjunto olivo.jpg",
+        image: "img/Deportiva/conjunto olivo.jpg",
         category: 'Deportivo',
         destacado: false
     },
@@ -214,7 +214,7 @@ const database = [
         id: 13,
         name: 'Trusa Negra',
         price: 100.000,
-        image: "assets/img/Deportiva/trusa negra deportiva.jpg",
+        image: "img/Deportiva/trusa negra deportiva.jpg",
         category: 'Deportivo',
         destacado: false
     },
@@ -222,7 +222,7 @@ const database = [
         id: 14,
         name: 'Camisa a cuadros azul',
         price: 70.000,
-        image: "assets/img/Elegante/camisa a cuadros azul.jpg",
+        image: "img/Elegante/camisa a cuadros azul.jpg",
         category: 'Elegante',
         destacado: false
     },
@@ -230,7 +230,7 @@ const database = [
         id: 15,
         name: 'Camisa Gris',
         price: 70.000,
-        image: "assets/img/Elegante/gray.jpg",
+        image: "img/Elegante/gray.jpg",
         category: 'Elegante',
         destacado: true
     },
@@ -238,7 +238,7 @@ const database = [
         id: 16,
         name: 'Camisa Manga Corta',
         price: 65.000,
-        image: "assets/img/Elegante/gris manga corta.jpg",
+        image: "img/Elegante/gris manga corta.jpg",
         category: 'Elegante',
         destacado: false
     },
@@ -246,7 +246,7 @@ const database = [
         id: 17,
         name: 'Camisa Rosada',
         price: 70.000,
-        image: "assets/img/Elegante/lila.jpg",
+        image: "img/Elegante/lila.jpg",
         category: 'Elegante',
         destacado: false
     },
@@ -254,7 +254,7 @@ const database = [
         id: 18,
         name: 'Pantalón Café',
         price: 125.000,
-        image: "assets/img/Elegante/pantalon brown.jpg",
+        image: "img/Elegante/pantalon brown.jpg",
         category: 'Elegante',
         destacado: false
     },
@@ -262,7 +262,7 @@ const database = [
         id: 19,
         name: 'Pantalón Azul Oscuro',
         price: 125.000,
-        image: "assets/img/Elegante/pantalon dark blue.jpg",
+        image: "img/Elegante/pantalon dark blue.jpg",
         category: 'Elegante',
         destacado: false
     },
@@ -270,7 +270,7 @@ const database = [
         id: 20,
         name: 'Pantalón Negro',
         price: 125.000,
-        image: "assets/img/Elegante/pantalon negro.jpg",
+        image: "img/Elegante/pantalon negro.jpg",
         category: 'Elegante',
         destacado: false
     },
@@ -278,7 +278,7 @@ const database = [
         id: 21,
         name: 'Pantalón Azul',
         price: 125.000,
-        image: "assets/img/Elegante/pantalon sky blue.jpg",
+        image: "img/Elegante/pantalon sky blue.jpg",
         category: 'Elegante',
         destacado: false
     }
